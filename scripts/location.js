@@ -16,10 +16,8 @@ function getAPIdata2() {
     var locationFrance =  '<div class="locationFrance">';
 		locationFrance +=   '<div class="name"> '+response.results[randomLocation].name+' </div>';
         locationFrance +=	 '<div class="snippet"> '+ response.results[randomLocation].snippet +' </div>';
-        locationFrance +=	 '<div class="score"> '+ Math.round(response.results[randomLocation].score * 10) / 10 +' </div>'; //Wil het eigenlijk afkorten naar 1 decimaal achter de komma maar ik kan het even niet vinden.
+        locationFrance +=	 '<div class="score"> '+ Math.round(response.results[randomLocation].score * 10) / 10 +' </div>'; //1 decimaal achter de komma, is mooier dan 10 cijfers erachter. Dan is het ook niet duidelijk dat het over een rating gaat. 
 		locationFrance += '</div>';
-
-		// Math.round(num * 100) / 100
 
     document.getElementById("location").innerHTML=locationFrance;
 
