@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'LetterGothicStd';
+    src: url('../fonts/LetterGothicStd.otf');
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'LetterGothicStd';
+    background-color: #edf0f9;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0; 
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.menu{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+.spacex{
+    width:40%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.item{
+    background-color: #edf0f9;
+    flex-flow: column;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.header{
+    margin-top: 7%;
+   
+}
+
+.names{
+    color: white;
+    background-image: url('../images/village.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid #C14021; */
+}
+
+.nameList{
+    font-size: 20px;
+}
+
+.name, .surname, .score{
+    font-size: 30px;
+}
+
+.frankrijk{
+    color: white;
+    background-image: url('../images/france.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid #081F7B; */
+}
+
+.header, .frankrijk, .names{
+    width: 100%;
+    padding:40px;
+    text-align:center;
+}
+
+/* Hieronder staan de classes los van elkaar omdat het gaat om verschillende kleuren, dus kunnen ze niet in een reeks achter elkaar */
+/* .pie-2{
+    border: 1px solid #081F7B; 
+}
+
+.line-3{
+    border: 1px solid #C14021;
+}
+
+.column-4{
+    border: 1px solid #B6B0A9;
+}
+
+.weather-5{
+    border: 1px solid #005EB8;
+} */
+
+/*iPad*/
+@media only screen and (min-width: 768px) {  
+    .item:nth-of-type(1){
+        width:100% ; 
+
+    }      
+
+    .item{
+        width: 48%;
+        margin: 1%;
+    }
+
+   h1{
+        font-size: 20px;
+    }
+
+    #countdown{
+        font-size: 45px;
+    }
+
+    .names{
+        /* border: 2px solid #C14021; */
+    }
+
+    .frankrijk{
+        /* border: 2px solid #081F7B; */
+      
+    }
+
+    
+}
+
+/*MacBook*/
+@media only screen and (min-width: 1200px) {
+    h1{
+        font-size: 25px;
+    }
+
+    #countdown{
+        font-size: 55px;
+    }
+
+    .names{
+        /* border: 3px solid #C14021; */
+    }
+    
+    .frankrijk{
+        /* border: 3px solid #081F7B; */
+    }
+
+   
+}
+
+/*iMac*/
+@media all and (min-width: 1400px) {
+    .item{
+        width: 24.2%;
+        margin: 10px 10px;
+    }
+
+    .container{
+        max-width:2500px;
+        margin: auto;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    #countdown{
+        font-size: 70px;
+    }
+
+    /* .names{
+        border: 4px solid #C14021;
+    }
+
+    .frankrijk{
+        border: 4px solid #081F7B;
+    } */
+    
+}
