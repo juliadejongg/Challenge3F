@@ -19,10 +19,8 @@ function getAPIdata() {
 		nameList +=	 '<div class="region"> '+response[1].region+' </div>';
 		nameList += '</div>';
 
-    document.getElementById("name").innerHTML=nameList;
-
-
-    
+	document.getElementById("name").innerHTML=nameList;
+	
 	})
 	
 	.catch(function(error) {
